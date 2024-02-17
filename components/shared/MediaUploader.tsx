@@ -65,7 +65,7 @@ const MediaUploader = ({
       {({ open }) => (
         <div className="w-full flex flex-col gap-4">
           <h3 className="h3-bold text-dark-600">
-            Original image
+            Original
           </h3>
 
           {publicId ? (
