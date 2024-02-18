@@ -129,7 +129,7 @@ export async function getAllImages({ limit = 9, page = 1, searchQuery = '' }: {
       query = {
         publicId: {
           $in: resourceIds
-        };
+        }
       };
     };
 
