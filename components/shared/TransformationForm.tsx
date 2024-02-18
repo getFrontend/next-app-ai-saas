@@ -155,7 +155,7 @@ const TransformationForm = ({ data = null, action, userId, type, creditBalance, 
           [fieldName === 'prompt' ? 'prompt' : 'to']: value
         }
       }));
-    }, 1000);
+    }, 1000)();
 
     return onChangeField(value);
   };
