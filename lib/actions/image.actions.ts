@@ -36,8 +36,8 @@ export async function addImage(
     return JSON.parse(JSON.stringify(newImage));
   } catch (error) {
     handleError(error)
-  }
-}
+  };
+};
 
 // Update image
 export async function updateImage(
@@ -63,7 +63,7 @@ export async function updateImage(
   } catch (error) {
     handleError(error);
   }
-}
+};
 
 // Delete image
 export async function deleteImage(imageId: string) {
@@ -76,7 +76,7 @@ export async function deleteImage(imageId: string) {
   } finally {
     redirect("/");
   }
-}
+};
 
 // Get image by ID
 export async function getImageById(imageId: string) {
@@ -93,13 +93,13 @@ export async function getImageById(imageId: string) {
   } catch (error) {
     handleError(error)
   }
-}
+};
 
 // Get all images
-export async function getAllImages({ limit = 9, page = 1, searchQuery = "" }: {
-  limit?: number,
-  page: number,
-  searchQuery?: string
+export async function getAllImages({ limit = 9, page = 1, searchQuery = '' }: {
+  limit?: number;
+  page: number;
+  searchQuery?: string;
 }) {
   try {
     await connectToDatabase();
@@ -108,13 +108,13 @@ export async function getAllImages({ limit = 9, page = 1, searchQuery = "" }: {
       cloud_name: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,
       api_key: process.env.CLOUDINARY_API_KEY,
       api_secret: process.env.CLOUDINARY_API_SECRET,
-      secure: true
-    })
+      secure: true,
+    });
 
-    let expression = "folder=imagenko";
+    let expression = 'folder=imaginify';
 
     if (searchQuery) {
-      expression += ` AND ${searchQuery}`;
+      expression += ` AND ${searchQuery}`
     };
 
     const { resources } = await cloudinary.search
@@ -129,14 +129,14 @@ export async function getAllImages({ limit = 9, page = 1, searchQuery = "" }: {
       query = {
         publicId: {
           $in: resourceIds
-        }
+        };
       };
     };
 
     const skipAmount = (Number(page) - 1) * limit;
 
     const images = await populateUser(Image.find(query))
-      .sort({ upDated: -1 })
+      .sort({ updatedAt: -1 })
       .skip(skipAmount)
       .limit(limit);
 
@@ -145,10 +145,10 @@ export async function getAllImages({ limit = 9, page = 1, searchQuery = "" }: {
 
     return {
       data: JSON.parse(JSON.stringify(images)),
-      totalPages: Math.ceil(totalImages / limit),
-      savedImages
+      totalPage: Math.ceil(totalImages / limit),
+      savedImages,
     };
   } catch (error) {
-    handleError(error)
-  }
-}
+    handleError(error);
+  };
+};
