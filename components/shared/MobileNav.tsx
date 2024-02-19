@@ -24,8 +24,8 @@ const MobileNav = () => {
         <Image
           src={"/assets/images/logo-text.png"}
           alt="imagenko logo"
-          width={174}
-          height={44}
+          width={180}
+          height={40}
         />
       </Link>
       <nav className="flex gap-2">
@@ -46,8 +46,8 @@ const MobileNav = () => {
                 <Image
                   src={"/assets/images/logo-text.png"}
                   alt="imagenko logo"
-                  width={174}
-                  height={44}
+                  width={153}
+                  height={34}
                 />
                 <ul className="header-nav_elements">
                   {navLinks.map((link) => {
@@ -74,10 +74,10 @@ const MobileNav = () => {
         </SignedIn>
 
         <SignedOut>
-            <Button asChild className="button bg-purple-gradient bg-cover">
-              <Link href="/sign-in">Login</Link>
-            </Button>
-          </SignedOut>
+          <Button asChild className="button bg-purple-gradient bg-cover">
+            <Link href="/sign-in">Login</Link>
+          </Button>
+        </SignedOut>
       </nav>
     </header>
   )
