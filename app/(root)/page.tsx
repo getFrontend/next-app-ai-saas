@@ -14,7 +14,7 @@ const Home = async ({ searchParams }: SearchParamProps) => {
     <>
       <section className="home">
         <h1 className="home-heading">
-          Imagenko: your AI artist who never gets tired!
+          Your AI magic artist <span className="text-black">who never gets tired!</span>
         </h1>
         <ul className="w-full flex-center gap-20">
           {navLinks.slice(1, 5).map((link) => (
