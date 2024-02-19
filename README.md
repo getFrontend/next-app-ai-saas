@@ -4,6 +4,8 @@
 
 The project also aimed to improve real-world application development skills. Thanks to **JavaScript Mastery** tutorials and masterclasses from **Adrian Hajdin** 🚀.
 
+![](https://github.com/getFrontend/next-app-ai-saas/blob/main/public/imagenko-1.png?raw=true)
+
 ## Tech Stack
 
 ⚙️ Next.js 14
@@ -26,6 +28,8 @@ The project also aimed to improve real-world application development skills. Tha
 
 🔋 **Authentication and Authorization**: Secure user access with registration, login, and route protection.
 
+![](https://github.com/getFrontend/next-app-ai-saas/blob/main/public/imagenko-2.png?raw=true)
+
 🔋 **Community Image Showcase**: Explore user transformations with easy navigation using pagination
 
 🔋 **Advanced Image Search**: Find images by content or objects present inside the image quickly and accurately
@@ -40,6 +44,8 @@ The project also aimed to improve real-world application development skills. Tha
 
 🔋 **Background Removal**: Extract objects from backgrounds with ease
 
+![](https://github.com/getFrontend/next-app-ai-saas/blob/main/public/imagenko-4.png?raw=true)
+
 🔋 **Download Transformed Images**: Save and share AI-transformed images conveniently
 
 🔋 **Transformed Image Details**: View details of transformations for each image
@@ -49,6 +55,8 @@ The project also aimed to improve real-world application development skills. Tha
 🔋 **Credits System**: Earn or purchase credits for image transformations
 
 🔋 **Profile Page**: Access transformed images and credit information personally
+
+![](https://github.com/getFrontend/next-app-ai-saas/blob/main/public/imagenko-3.png?raw=true)
 
 🔋 **Credits Purchase**: Securely buy credits via Stripe for uninterrupted use
 
