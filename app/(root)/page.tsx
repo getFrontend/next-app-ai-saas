@@ -49,6 +49,14 @@ const Home = async ({ searchParams }: SearchParamProps) => {
           page={page}
         />
       </section>
+
+      <footer className="mt-12">
+        <div className="flex flex-col gap-2">
+          <p className="text-gray-800"><span className="font-bold">Imagenko</span> -  your tool for generating creative and unique images with AI.</p>
+          <p className="text-gray-800">Developer: Sergey UP</p>
+          <p className="pt-4">© 2024 - All right reserved by AI Magic Artist</p>
+        </div>
+      </footer>
     </>
   );
 };
