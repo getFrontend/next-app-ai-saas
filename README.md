@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# About
 
-## Getting Started
+**Imagenko** it's an AI-powered image generator. The project was implemented as a real Software-as-a-Service app with AI features and payments & credits system.
 
-First, run the development server:
+The project also aimed to improve real-world application development skills. Thanks to **JavaScript Mastery** tutorials and masterclasses from **Adrian Hajdin** 🚀.
+
+## Tech Stack
+
+⚙️ Next.js 14
+
+⚙️ TypeScript
+
+⚙️ MongoDB & Mongoose
+
+⚙️ React Hook Form & Zod (for form validation)
+
+⚙️ Clerk
+
+⚙️ Cloudinary
+
+⚙️ Stripe
+
+⚙️ Shadcn UI & Tailwind CSS
+
+## Features
+
+🔋 **Authentication and Authorization**: Secure user access with registration, login, and route protection.
+
+🔋 **Community Image Showcase**: Explore user transformations with easy navigation using pagination
+
+🔋 **Advanced Image Search**: Find images by content or objects present inside the image quickly and accurately
+
+🔋 **Image Restoration**: Revive old or damaged images effortlessly
+
+🔋 **Image Recoloring**: Customize images by replacing objects with desired colors easily
+
+🔋 **Image Generative Fill**: Fill in missing areas of images seamlessly
+
+🔋 **Object Removal**: Clean up images by removing unwanted objects with precision
+
+🔋 **Background Removal**: Extract objects from backgrounds with ease
+
+🔋 **Download Transformed Images**: Save and share AI-transformed images conveniently
+
+🔋 **Transformed Image Details**: View details of transformations for each image
+
+🔋 **Transformation Management**: Control over deletion and updates of transformations
+
+🔋 **Credits System**: Earn or purchase credits for image transformations
+
+🔋 **Profile Page**: Access transformed images and credit information personally
+
+🔋 **Credits Purchase**: Securely buy credits via Stripe for uninterrupted use
+
+🔋 **Responsive UI/UX**: A seamless experience across devices with a user-friendly interface
+
+## Quick Start
+
+Follow these steps to set up the project locally on your machine.
+
+**Prerequisites**
+
+Make sure you have the following installed on your machine:
+
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/)
+
+**Cloning the Repository**
+
+```bash
+git clone https://github.com/getFrontend/next-app-ai-saas.git
+```
+
+**Installation**
+
+Install the project dependencies using npm:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Set Up Environment Variables**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Rename the `.env_example` file to `.env.local`.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Replace the placeholder values with your actual respective account credentials from [Clerk](https://clerk.com/), [MongoDB](https://www.mongodb.com/), [Cloudinary](https://cloudinary.com/) and [Stripe](https://stripe.com)
 
-## Learn More
+**Running the Project**
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
